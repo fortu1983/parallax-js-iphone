@@ -55,6 +55,7 @@ body .container .row .copy h1, body .container .row .copy h4 {
 
 body .container .row .copy h1 {
   font-size: 3rem;
+  font-weight: 700;
 }
 
 @media (max-width: 767px) {
@@ -63,12 +64,12 @@ body .container .row .copy h1 {
   }
 }
 
-body .container .row .copy h4 {
+body .container .row .copy h1 h4 {
   font-size: 1.5rem;
 }
 
 @media (max-width: 767px) {
-  body .container .row .copy h4 {
+  body .container .row .copy h1 h4 {
     font-size: 1rem;
   }
 }
@@ -89,7 +90,7 @@ body .container .row .scene div.ip-1 {
     width: 90px;
     height: auto;
     left: 10% !important;
-    top: 0px !important;
+    top: -50px !important;
   }
 }
 
@@ -112,7 +113,7 @@ body .container .row .scene div.ip-2 {
 @media (max-width: 767px) {
   body .container .row .scene div.ip-2 {
     left: 50% !important;
-    top: 0px !important;
+    top: -20px !important;
     width: 90px;
     height: auto;
     margin-left: -45px;
@@ -138,7 +139,7 @@ body .container .row .scene div.ip-3 {
 @media (max-width: 767px) {
   body .container .row .scene div.ip-3 {
     left: 80% !important;
-    top: 0px !important;
+    top: -40px !important;
     width: 90px;
     height: auto;
     margin-left: -45px;
