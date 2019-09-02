@@ -1,0 +1,221 @@
+body {
+  background: #fff;
+  color: #111111;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+body .header {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20px;
+}
+
+body .header h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+body .container .row {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 400px;
+}
+
+@media (max-width: 767px) {
+  body .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .container .row .copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  body .container .row .copy {
+    margin-top: 100px;
+  }
+}
+
+body .container .row .copy h1, body .container .row .copy h4 {
+  color: #fff;
+  margin: 0;
+}
+
+body .container .row .copy h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+  body .container .row .copy h1 {
+    font-size: 2rem;
+  }
+}
+
+body .container .row .copy h4 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  body .container .row .copy h4 {
+    font-size: 1rem;
+  }
+}
+
+body .container .row .scene {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+body .container .row .scene div.ip-1 {
+  width: 190px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  body .container .row .scene div.ip-1 {
+    width: 90px;
+    height: auto;
+    left: 10% !important;
+    top: 150px !important;
+  }
+}
+
+body .container .row .scene div.ip-1 p {
+  -webkit-transform: skew(0deg, 30deg);
+          transform: skew(0deg, 30deg);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+body .container .row .scene div.ip-2 {
+  left: -180px !important;
+  top: 80px !important;
+  width: 190px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  body .container .row .scene div.ip-2 {
+    left: 50% !important;
+    top: 140px !important;
+    width: 90px;
+    height: auto;
+    margin-left: -45px;
+  }
+}
+
+body .container .row .scene div.ip-2 p {
+  -webkit-transform: skew(0deg, -30deg);
+          transform: skew(0deg, -30deg);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+body .container .row .scene div.ip-3 {
+  left: -290px !important;
+  top: 180px !important;
+  width: 190px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  body .container .row .scene div.ip-3 {
+    left: 80% !important;
+    top: 140px !important;
+    width: 90px;
+    height: auto;
+    margin-left: -45px;
+  }
+}
+
+body .container .row .scene div.ip-3 p {
+  -webkit-transform: skew(0deg, 30deg);
+          transform: skew(0deg, 30deg);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.blue {
+  background: dodgerblue;
+}
+
+.green {
+  background: #00ffaa;
+}
+
+.white {
+  background: #fff;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
