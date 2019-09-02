@@ -1,0 +1,136 @@
+$color-green: #00ffaa
+$color-background: #111111
+$color-text: #555
+$color-white: #fff
+$color-green-2: #009B72
+$smartphone: 767px
+
+body
+  background: $color-white
+  color: $color-background
+  font-family: 'Red Hat Display', sans-serif
+  font-size: 18px
+  margin: 0
+  .header 
+    margin: 0 auto
+    max-width: 1200px
+    padding: 10px
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    height: 20px
+    h1 
+      font-size: 16px
+      margin: 0
+  .container 
+    .row 
+      margin: 0 auto
+      max-width: 100%
+      padding: 10px
+      position: relative
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      height: 400px
+      @media (max-width: $smartphone)
+        flex-direction: column
+      .copy 
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        @media (max-width: $smartphone)
+          margin-top: 100px
+        h1, h4 
+          color: $color-white
+          margin: 0
+        h1
+          font-size: 3rem
+          @media (max-width: $smartphone)
+            font-size: 2rem
+        h4
+          font-size: 1.5rem
+          @media (max-width: $smartphone)
+            font-size: 1rem
+      .scene 
+        margin: 0
+        padding: 0
+        z-index: 1
+        div.ip-1 
+          width: 190px
+          height: auto
+          @media (max-width: $smartphone)
+            width: 90px
+            height: auto
+            left: 10%!important
+            top: 150px!important
+          p
+            transform: skew(0deg, 30deg)
+            font-size: 1rem
+            font-weight: bold
+            margin: 0px
+            padding: 0px
+        div.ip-2 
+          left: -180px !important
+          top: 80px !important
+          width: 190px
+          height: auto
+          @media (max-width: $smartphone)
+            left: 50% !important
+            top: 140px !important
+            width: 90px
+            height: auto
+            margin-left: -45px
+          p
+            transform: skew(0deg, -30deg)
+            font-size: 1rem
+            font-weight: bold
+            margin: 0px
+            padding: 0px
+        div.ip-3 
+          left: -290px !important
+          top: 180px !important
+          width: 190px
+          height: auto
+          @media (max-width: $smartphone)
+            left: 80% !important
+            top: 140px !important
+            width: 90px
+            height: auto
+            margin-left: -45px
+          p
+            transform: skew(0deg, 30deg)
+            font-size: 1rem
+            font-weight: bold
+            margin: 0px
+            padding: 0px
+
+
+img 
+  display: block
+  width: 100%
+.blue 
+  background: dodgerblue
+.green 
+  background: $color-green
+.white 
+  background: $color-white
+
+.mobile
+  display: none
+  @media (max-width: $smartphone)
+    display: block
+
+.desktop
+  @media (max-width: $smartphone)
+    display: none
+
+
+// font-family: 'Ubuntu', sans-serif
+// font-family: 'Rubik', sans-serif
+// font-family: 'Anton', sans-serif
+// font-family: 'Red Hat Display', sans-serif
+// font-family: 'Abril Fatface', cursive
+// font-family: 'Patua One', cursive

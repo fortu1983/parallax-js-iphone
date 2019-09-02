@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Parallax.js example</title>
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Patua+One|Red+Hat+Display|Rubik|Ubuntu&display=swap" rel="stylesheet">
+	<!-- FontAwesome -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<h1>PARALLAX.JS</h1>
+	</div>
+	<div id="container" class="container">
+		<div class="row blue">
+			<div class="copy">
+					<h1>PARALLAX.JS</h1>
+					<h4 class="desktop">Just hover it! <i class="fa fa-arrow-right"></i></h4>
+					<h4 class="mobile">Just hover it! <i class="fa fa-arrow-down"></i></h4>
+			</div>
+			<div id="scene" class="scene">
+				<div data-depth="0.90" data-depth-y="0.99" data-depth-x="-0.90" data-scalar-x="1.00"  data-clip-relative-input="true" class="ip-1">
+					<p>iPhone 1</p>
+					<img src="assets/iphone-img/ip-1.png">
+				</div> 
+				<div data-depth="0.50" data-depth-y="-0.90" data-depth-x="0.30" data-scalar-x="5.00"  class="ip-2">
+					<p>iPhone 2</p>
+					<img src="assets/iphone-img/ip-2.png">
+				</div>
+				<div data-depth="0.30" data-depth-y="0.10" data-depth-x="0.99" data-scalar-x="8.00" class="ip-3">
+						<p>iPhone 3</p>
+						<img src="assets/iphone-img/ip-1.png">
+					</div> 
+			</div>
+		</div>
+		<div class="row green">
+
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+</body>
+</html>
