@@ -48,12 +48,6 @@ body .container .row .copy {
           justify-content: center;
 }
 
-@media (max-width: 767px) {
-  body .container .row .copy {
-    margin-top: 100px;
-  }
-}
-
 body .container .row .copy h1, body .container .row .copy h4 {
   color: #fff;
   margin: 0;
