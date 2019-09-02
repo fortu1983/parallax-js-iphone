@@ -6,32 +6,6 @@ body {
   margin: 0;
 }
 
-body .header {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 10px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 20px;
-}
-
-body .header h1 {
-  font-size: 16px;
-  margin: 0;
-}
-
 body .container .row {
   margin: 0 auto;
   max-width: 100%;
@@ -46,7 +20,7 @@ body .container .row {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 400px;
+  height: 100vh;
 }
 
 @media (max-width: 767px) {
@@ -121,7 +95,7 @@ body .container .row .scene div.ip-1 {
     width: 90px;
     height: auto;
     left: 10% !important;
-    top: 150px !important;
+    top: 0px !important;
   }
 }
 
@@ -144,7 +118,7 @@ body .container .row .scene div.ip-2 {
 @media (max-width: 767px) {
   body .container .row .scene div.ip-2 {
     left: 50% !important;
-    top: 140px !important;
+    top: 0px !important;
     width: 90px;
     height: auto;
     margin-left: -45px;
@@ -170,7 +144,7 @@ body .container .row .scene div.ip-3 {
 @media (max-width: 767px) {
   body .container .row .scene div.ip-3 {
     left: 80% !important;
-    top: 140px !important;
+    top: 0px !important;
     width: 90px;
     height: auto;
     margin-left: -45px;
@@ -193,6 +167,8 @@ img {
 
 .blue {
   background: dodgerblue;
+  background: dodgerblue;
+  background: radial-gradient(circle, dodgerblue 0%, #1e0eff 100%);
 }
 
 .green {

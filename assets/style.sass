@@ -11,19 +11,6 @@ body
   font-family: 'Red Hat Display', sans-serif
   font-size: 18px
   margin: 0
-  .header 
-    margin: 0 auto
-    max-width: 1200px
-    padding: 10px
-    position: relative
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    height: 20px
-    h1 
-      font-size: 16px
-      margin: 0
   .container 
     .row 
       margin: 0 auto
@@ -33,7 +20,7 @@ body
       display: flex
       flex-direction: row
       justify-content: space-around
-      height: 400px
+      height: 100vh
       @media (max-width: $smartphone)
         flex-direction: column
       .copy 
@@ -65,7 +52,7 @@ body
             width: 90px
             height: auto
             left: 10%!important
-            top: 150px!important
+            top: 0px!important
           p
             transform: skew(0deg, 30deg)
             font-size: 1rem
@@ -79,7 +66,7 @@ body
           height: auto
           @media (max-width: $smartphone)
             left: 50% !important
-            top: 140px !important
+            top: 0px !important
             width: 90px
             height: auto
             margin-left: -45px
@@ -96,7 +83,7 @@ body
           height: auto
           @media (max-width: $smartphone)
             left: 80% !important
-            top: 140px !important
+            top: 0px !important
             width: 90px
             height: auto
             margin-left: -45px
@@ -113,7 +100,9 @@ img
   width: 100%
 .blue 
   background: dodgerblue
-.green 
+  background: rgb(30,144,255)
+  background: radial-gradient(circle, rgba(30,144,255,1) 0%, rgba(30,14,255,1) 100%)
+.green
   background: $color-green
 .white 
   background: $color-white
